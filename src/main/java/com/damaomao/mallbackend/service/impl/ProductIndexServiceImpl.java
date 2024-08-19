@@ -32,7 +32,7 @@ public class ProductIndexServiceImpl implements ProductIndexService {
                 // 当前页集合
                 map.put("list",infoPage.getRecords());
                 // 总页数
-                map.put("total",infoPage.getPages());
+                map.put("pages",infoPage.getPages());
                 // 总记录数
                 map.put("total",infoPage.getTotal());
                 // 返回结果
