@@ -8,11 +8,11 @@
         <version>2.3.12.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.springboot</groupId>
-    <artifactId>shop-mgr</artifactId>
+    <groupId>com.damaomaot</groupId>
+    <artifactId>mall-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>shop-mgr</name>
-    <description>Demo project for Spring Boot</description>
+    <description>mall project for Spring Boot</description>
     <url/>
     <developers>
         <developer/>

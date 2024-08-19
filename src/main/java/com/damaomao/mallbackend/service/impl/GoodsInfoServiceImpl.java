@@ -1,12 +1,12 @@
-package com.damaomao.proudctbackend.service.impl;
+package com.damaomao.mallbackend.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.damaomao.proudctbackend.dao.GoodsInfoDao;
-import com.damaomao.proudctbackend.dto.GoodsInfoDto;
-import com.damaomao.proudctbackend.pojo.GoodsInfo;
-import com.damaomao.proudctbackend.pojo.ResultVo;
-import com.damaomao.proudctbackend.service.GoodsInfoService;
+import com.damaomao.mallbackend.dao.GoodsInfoDao;
+import com.damaomao.mallbackend.dto.GoodsInfoDto;
+import com.damaomao.mallbackend.pojo.GoodsInfo;
+import com.damaomao.mallbackend.pojo.ResultVo;
+import com.damaomao.mallbackend.service.GoodsInfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

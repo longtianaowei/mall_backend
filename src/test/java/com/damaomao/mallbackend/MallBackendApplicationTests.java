@@ -1,10 +1,10 @@
-package com.damaomao.proudctbackend;
+package com.damaomao.mallbackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProudctBackendApplicationTests {
+class MallBackendApplicationTests {
 
     @Test
     void contextLoads() {

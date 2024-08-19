@@ -1,4 +1,4 @@
-package com.damaomao.proudctbackend.config;
+package com.damaomao.mallbackend.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.springframework.context.annotation.Bean;

@@ -1,7 +1,7 @@
-package com.damaomao.proudctbackend.dao;
+package com.damaomao.mallbackend.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.damaomao.proudctbackend.pojo.ProductIndex;
+import com.damaomao.mallbackend.pojo.ProductIndex;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

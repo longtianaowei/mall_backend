@@ -1,14 +1,14 @@
-package com.damaomao.proudctbackend;
+package com.damaomao.mallbackend;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProudctBackendApplication {
+public class MallBackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProudctBackendApplication.class, args);
+        SpringApplication.run(MallBackendApplication.class, args);
     }
 
 }

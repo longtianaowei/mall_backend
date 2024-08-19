@@ -1,4 +1,4 @@
-package com.damaomao.proudctbackend.pojo;
+package com.damaomao.mallbackend.pojo;
 
 import lombok.Data;
 

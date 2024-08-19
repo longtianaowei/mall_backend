@@ -1,4 +1,4 @@
-package com.damaomao.proudctbackend.pojo;
+package com.damaomao.mallbackend.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

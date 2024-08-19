@@ -1,6 +1,6 @@
-package com.damaomao.proudctbackend.dto;
+package com.damaomao.mallbackend.dto;
 
-import com.damaomao.proudctbackend.pojo.MyPage;
+import com.damaomao.mallbackend.pojo.MyPage;
 import lombok.Data;
 
 @Data
