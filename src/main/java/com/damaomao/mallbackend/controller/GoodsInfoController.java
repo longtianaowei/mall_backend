@@ -3,6 +3,7 @@ package com.damaomao.mallbackend.controller;
 import com.damaomao.mallbackend.dto.GoodsInfoDto;
 import com.damaomao.mallbackend.pojo.ResultVo;
 import com.damaomao.mallbackend.service.GoodsInfoService;
+import com.damaomao.mallbackend.service.ProductIndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
