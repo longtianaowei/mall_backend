@@ -23,9 +23,15 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
                 // 创建条件构造器
                 QueryWrapper<GoodsInfo> queryWrapper = new QueryWrapper<>();
                 queryWrapper.eq("pro_type",goodsInfoDto.getProType());
-
+                // 判断是否需要添加品牌作为条件查询
+                boolean isBrand = goodsInfoDto.getBrandId()!=0 && goodsInfoDto.getBrandId() != null;
+                // 品牌查询
+                queryWrapper.eq(isBrand,"brand_id",goodsInfoDto.getBrandId());
+                // 价格区间查询
+                boolean isPrice = goodsInfoDto.getMinPrice()!=0 && goodsInfoDto.getMinPrice()!=null;
+                queryWrapper.between(isPrice,"price",goodsInfoDto.getMinPrice(),goodsInfoDto.getMaxPrice());
                 // 查询分页
-                Page<GoodsInfo> page = new Page<>(goodsInfoDto.getPage(),goodsInfoDto.getPageSize());
+                Page<GoodsInfo> page = new Page<>(goodsInfoDto.getPageNo(),goodsInfoDto.getPageSize());
 
              // 获取查询结果
                 Page<GoodsInfo> infoPage = goodsInfoDao.selectPage(page,queryWrapper);
@@ -42,5 +48,6 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
                 }
                 return ResultVo.error("没有查询到数据");
         }
+
 }
 

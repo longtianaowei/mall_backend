@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class MyPage {
     // 页码
-    private Integer page;
+    private Integer pageNo;
     // 每页显示数量
     private  Integer pageSize;
 }

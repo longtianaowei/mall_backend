@@ -23,7 +23,7 @@ public class ProductIndexServiceImpl implements ProductIndexService {
             queryWrapper.eq("pro_type",productIndexDto.getProType());
 
             // 查询分页
-            Page<ProductIndex> page = new Page<>(productIndexDto.getPage(),productIndexDto.getPageSize());
+            Page<ProductIndex> page = new Page<>(productIndexDto.getPageNo(),productIndexDto.getPageSize());
 
             // 获取查询结果
             Page<ProductIndex> infoPage = productIndexDao.selectPage(page,queryWrapper);
