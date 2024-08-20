@@ -13,4 +13,6 @@ public class GoodsInfoDto extends MyPage {
     private Double minPrice;
     // 商品最高价格
     private Double maxPrice;
+    // 价格排序
+    private String priceSort;
 }

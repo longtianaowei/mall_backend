@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 @Service
 public class GoodsInfoServiceImpl implements GoodsInfoService {
@@ -30,6 +31,15 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
                 // 价格区间查询
                 boolean isPrice = goodsInfoDto.getMinPrice()!=0 && goodsInfoDto.getMinPrice()!=null;
                 queryWrapper.between(isPrice,"price",goodsInfoDto.getMinPrice(),goodsInfoDto.getMaxPrice());
+
+                // 价格升序
+                if(Objects.equals(goodsInfoDto.getPriceSort(), "asc")) {
+                        queryWrapper.orderByAsc("price");
+                }
+                // 价格降序
+                if(Objects.equals(goodsInfoDto.getPriceSort(), "desc")) {
+                        queryWrapper.orderByDesc("price");
+                }
                 // 查询分页
                 Page<GoodsInfo> page = new Page<>(goodsInfoDto.getPageNo(),goodsInfoDto.getPageSize());
 
