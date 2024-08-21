@@ -23,4 +23,9 @@ public class GoodsInfoController {
         return goodsInfoService.queryGoodsInfoByType(dto);
     }
 
+    @GetMapping("/detail")
+    public ResultVo queryGoodsInfoDetailByGoodsId(Integer goodsId) {
+        return goodsInfoService.queryGoodsInfoDetailByGoodsId(goodsId);
+    }
+
 }

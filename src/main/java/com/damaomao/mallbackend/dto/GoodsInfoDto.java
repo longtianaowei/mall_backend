@@ -5,6 +5,8 @@ import lombok.Data;
 
 @Data
 public class GoodsInfoDto extends MyPage {
+    // 商品ID
+    private  Integer goodsId;
     // 商品类型
     private Integer proType;
     // 品牌ID

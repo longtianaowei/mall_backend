@@ -6,6 +6,7 @@ import com.damaomao.mallbackend.dao.GoodsInfoDao;
 import com.damaomao.mallbackend.dto.GoodsInfoDto;
 import com.damaomao.mallbackend.pojo.GoodsInfo;
 import com.damaomao.mallbackend.pojo.ResultVo;
+import com.damaomao.mallbackend.pojo.vo.GoodsInfoVO;
 import com.damaomao.mallbackend.service.GoodsInfoService;
 import org.springframework.stereotype.Service;
 
@@ -59,5 +60,14 @@ public class GoodsInfoServiceImpl implements GoodsInfoService {
                 return ResultVo.error("没有查询到数据");
         }
 
+        @Override
+        public ResultVo queryGoodsInfoDetailByGoodsId(Integer goodsId) {
+                // 查询商品详情
+                GoodsInfoVO goodsInfoVO = goodsInfoDao.queryByGoodsId(goodsId);
+                if(goodsInfoVO != null) {
+                        return ResultVo.success(goodsInfoVO);
+                }
+                return ResultVo.error();
+        }
 }
 
