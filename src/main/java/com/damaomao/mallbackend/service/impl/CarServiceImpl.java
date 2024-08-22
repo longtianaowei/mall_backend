@@ -1,6 +1,7 @@
 package com.damaomao.mallbackend.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.damaomao.mallbackend.dao.CarDao;
 import com.damaomao.mallbackend.pojo.Car;
 import com.damaomao.mallbackend.pojo.ResultVo;
@@ -12,7 +13,7 @@ import java.util.List;
 
 
 @Service
-public class CarServiceImpl implements CarService {
+public class CarServiceImpl extends ServiceImpl<CarDao, Car> implements CarService {
     @Resource
     private CarDao carDao;
 

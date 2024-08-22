@@ -18,7 +18,7 @@ public class Car {
     private Double price;
     private String src;
     private Integer userId;
-    private Integer orderId;
+    private String orderId;
     @TableLogic
     private  Integer delete_tag;
 }

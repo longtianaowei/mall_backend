@@ -1,9 +1,12 @@
 package com.damaomao.mallbackend.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.damaomao.mallbackend.pojo.Car;
 import com.damaomao.mallbackend.pojo.ResultVo;
 
-public interface CarService {
+import java.util.List;
+
+public interface CarService extends IService<Car> {
     // 添加购物车
     ResultVo addCar(Car car);
 
@@ -14,4 +17,5 @@ public interface CarService {
 
     // 逻辑删除购物车
     ResultVo delCar(Integer id);
+
 }
